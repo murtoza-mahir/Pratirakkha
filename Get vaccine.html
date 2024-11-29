@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaccine Appointment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<header>
+  
+    <nav class="bg-white shadow-xl">
+      <div class="container mx-auto px-4 flex justify-between items-center py-4 font-roboto bg-white shadow-md">
+        <!-- Brand Name -->
+        <div class="text-green-600 text-2xl font-semibold text-gray-800 font-roboto">
+          Pratirakkha
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="flex space-x-6 text-gray-500"> 
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Home</a></li>
+            <li><a href="vaccine.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Vaccine</a></li>
+            <li><a href="contact.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Contact</a></li>
+            <li><a href="about.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">About</a></li>
+            
+          </ul>
+        </div>
+  
+        <!-- User Icon -->
+         
+        <div class="flex items-center space-x-2">
+          <div class="md:col-span-2 text-right">
+            <div class="relative inline-block">
+  
+  
+  
+              <div class="relative inline-block">
+                <button
+                  class="bg-blue-500 text-black py-1 px-2 rounded-lg font-bold hover:bg-green-200"
+                  onclick="toggleDropdown()"
+                >
+                  User
+                </button>
+              
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdown"
+                  class="absolute hidden text-center mt-2 w-40 bg-gray-100 rounded-lg shadow-lg"
+                >
+                  <a
+                    href="#"
+                    class="block px-2 py-1  text-gray-800 hover:bg-gray-200 rounded-t-lg"
+                  >
+                    Login
+                  </a>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 rounded-b-lg"
+                  >
+                    Registration
+                  </a>
+                </div>
+              </div>
+            
+            </header> 
+            <br>
+            <br>
+
+<body class="bg-gray-100 font-sans">
+  <!-- Container -->
+  <div class="min-h-screen flex flex-col items-center justify-center">
+    <!-- Form Card -->
+    <div class="bg-white shadow-lg rounded-lg w-full max-w-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Vaccine Appointment</h2>
+      <!-- Form -->
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Child's Name -->
+        <div>
+          <label for="child-name" class="block text-sm font-semibold text-gray-600 mb-1">Child's Name</label>
+          <input 
+            id="child-name" 
+            type="text" 
+            placeholder="Enter child's name" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          />
+        </div>
+        <!-- Parent's Name -->
+        <div>
+          <label for="parent-name" class="block text-sm font-semibold text-gray-600 mb-1">Parent's Name</label>
+          <input 
+            id="parent-name" 
+            type="text" 
+            placeholder="Enter parent's name" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          />
+        </div>
+        <!-- Vaccine Selection -->
+        <div>
+          <label for="vaccine" class="block text-sm font-semibold text-gray-600 mb-1">Vaccine Selection</label>
+          <select 
+            id="vaccine" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          >
+            <option value="" disabled selected>Select vaccine</option>
+            <option value="measles">BCG</option>
+            <option value="polio">Pentavalent</option>
+            <option value="covid">PCV</option>
+            <option value="covid">OPV</option>
+            <option value="covid">MR</option>
+            <option value="covid">Polio</option>
+            <option value="covid">Rotavirus</option>
+            <option value="covid">Chickenpox</option>
+            <option value="covid">TT</option>
+          </select>
+        </div>
+        <!-- Mobile Number -->
+        <div>
+          <label for="mobile" class="block text-sm font-semibold text-gray-600 mb-1">Mobile Number</label>
+          <input 
+            id="mobile" 
+            type="tel" 
+            placeholder="Enter Mobile number" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          />
+        </div>
+        <!-- Center Name -->
+        <div>
+          <label for="center-name" class="block text-sm font-semibold text-gray-600 mb-1">Center Name</label>
+          <input 
+            id="center-name" 
+            type="text" 
+            placeholder="Enter center name" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          />
+        </div>
+        <!-- Time -->
+        <div>
+          <label for="time" class="block text-sm font-semibold text-gray-600 mb-1">Time</label>
+          <select 
+            id="time" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          >
+            <option value="" disabled selected>Select time</option>
+            <option value="9am">9:00 AM</option>
+            <option value="11am">11:00 AM</option>
+            <option value="2pm">2:00 PM</option>
+          </select>
+        </div>
+        <!-- Unique Code -->
+        <div>
+          <label for="unique-code" class="block text-sm font-semibold text-gray-600 mb-1">Unique Code</label>
+          <input 
+            id="unique-code" 
+            type="text" 
+            placeholder="Enter unique code" 
+            class="w-full border-2 border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-green-500"
+            required
+          />
+        </div>
+        <!-- Submit Button -->
+        <div class="md:col-span-2">
+          <button 
+            type="submit" 
+            class="w-full bg-green-500 text-white font-semibold rounded-lg py-2 hover:bg-green-600"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Important Information -->
+    <div class="mt-8 bg-white shadow-lg rounded-lg w-full max-w-2xl p-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Important Information</h3>
+      <ul class="list-decimal list-inside text-gray-700 space-y-2">
+        <li>Ensure all information entered is accurate.</li>
+        <li>Bring your NID card to the appointment.</li>
+        <li>Arrive at least 15 minutes early.</li>
+        <li>Wear a mask and follow all health protocols.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+<br>
+<br>
+</html>

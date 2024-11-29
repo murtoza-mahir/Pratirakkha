@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    .gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  
+}
+
+    
+.istok-web-regular {
+  font-family: "Istok Web", sans-serif;
+  
+}
+
+
+</style>
+
+
+
+</head>
+
+<header>
+  
+  <nav class="bg-white shadow-xl">
+    <div class="container mx-auto px-4 flex justify-between items-center py-4 font-roboto bg-white shadow-md">
+      <!-- Brand Name -->
+      <div class="text-green-600 text-2xl font-semibold text-gray-800 font-roboto">
+        Pratirakkha
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="flex space-x-6 text-gray-500"> 
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Home</a></li>
+          <li><a href="vaccine.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Vaccine</a></li>
+          <li><a href="contact.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">Contact</a></li>
+          <li><a href="about.html" class="font-bold hover:text-blue-600 bg-gray-100 rounded-lg">About</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- User Icon -->
+       
+      <div class="flex items-center space-x-2">
+        <div class="md:col-span-2 text-right">
+          <div class="relative inline-block">
+
+
+
+            <div class="relative inline-block">
+              <button
+                class="bg-blue-500 text-black py-1 px-2 rounded-lg font-bold hover:bg-green-200"
+                onclick="toggleDropdown()"
+              >
+                User
+              </button>
+            
+              <!-- Dropdown menu -->
+              <div
+                id="dropdown"
+                class="absolute hidden text-center mt-2 w-40 bg-gray-100 rounded-lg shadow-lg"
+              >
+                <a
+                  href="#"
+                  class="block px-2 py-1  text-gray-800 hover:bg-gray-200 rounded-t-lg"
+                >
+                  Login
+                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-800 hover:bg-gray-200 rounded-b-lg"
+                >
+                  Registration
+                </a>
+              </div>
+            </div>
+          
+          </header> 
+
+
+<body class="bg-gray-100">
+
+<div class="max-w-4xl mx-auto p-6 bg-white rounded-md shadow-md mt-12">
+  <!-- Logo and Header -->
+  <div class="text-center mb-12">
+   
+    <h1 class="gilda-display-regular text-green-600 text-lg font-bold mt-6">Create Your Account <br>(Welcome to Pratirakkha)</h1> 
+  </div>
+
+  <!-- Form -->
+  <form>
+    <div class="istok-web-regular grid sm:grid-cols-2 gap-6">
+      <!-- First Name -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">First Name</label>
+        <input
+          type="text"
+          name="fname"
+          placeholder="Enter first name"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Last Name -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          placeholder="Enter last name"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Mobile Number -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">Mobile No.</label>
+        <input
+          type="tel"
+          name="mobile"
+          placeholder="Enter mobile number"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      <!-- Confirm Password -->
+      <div>
+        <label class="block text-sm text-gray-800 mb-2">Confirm Password</label>
+        <input
+          type="password"
+          name="confirm-password"
+          placeholder="Confirm password"
+          class="w-full bg-gray-100 border border-gray-300 rounded-md px-4 py-3 text-sm text-gray-800 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="mt-8">
+      <button
+        type="submit"
+        class="w-full py-3 text-sm font-semibold tracking-wide text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+<br>
+<br>
+</html>
